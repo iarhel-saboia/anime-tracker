@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @otaku.name %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @otaku.birthday %>
+</p>
+
+<%= link_to 'Edit', edit_otaku_path(@otaku) %> |
+<%= link_to 'Back', otakus_path %>
