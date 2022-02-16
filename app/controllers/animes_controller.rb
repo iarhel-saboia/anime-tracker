@@ -18,6 +18,7 @@ class AnimesController < ApplicationController
   # GET /animes/1/edit
   def edit
   end
+  
 
   # POST /animes or /animes.json
   def create
@@ -33,6 +34,7 @@ class AnimesController < ApplicationController
       end
     end
   end
+  
 
   # PATCH/PUT /animes/1 or /animes/1.json
   def update
@@ -56,7 +58,7 @@ class AnimesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_anime
