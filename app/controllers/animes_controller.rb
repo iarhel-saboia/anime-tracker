@@ -1,5 +1,6 @@
 class AnimesController < ApplicationController
   before_action :set_anime, only: %i[ show edit update destroy ]
+  
 
   # GET /animes or /animes.json
   def index

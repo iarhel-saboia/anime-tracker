@@ -2,8 +2,6 @@
 
 <% if policy(@anime).admin?%>
   <%= render 'form_edit_anime_admin', anime: @anime %>
-<% else %>
-  <%= render 'form_edit_anime', anime: @anime %>
 <% end %>
 
 <%= link_to 'Show', @anime %> |

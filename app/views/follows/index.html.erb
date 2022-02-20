@@ -1,4 +1,4 @@
-   <h1>Your Favorite Animes</h1>
+<h1>Your Followed Animes</h1>
 
 <table>
   <thead>
@@ -10,10 +10,10 @@
   </thead>
 
   <tbody>
-    <% @favorites.each do |favorite| %>
+    <% @follows.each do |follow| %>
         <tr>
-          <td><%= favorite.anime.title %></td>
-          <td><%= favorite.anime.release %></td>   
+          <td><%= follow.anime.title %></td>
+          <td><%= follow.anime.release %></td>   
         </tr>
     <% end %>
   </tbody>

@@ -1,0 +1,6 @@
+<% y = favorite_help1(anime)%>
+  <% if y.nil?%>
+    <td><%= link_to 'Favorite', anime_favorites_path(anime), method: :post %></td>
+  <% else %>
+    <td><%= link_to 'Unfavorite', anime_favorite_path(y.anime, y.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>

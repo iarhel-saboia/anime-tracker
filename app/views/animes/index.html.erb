@@ -1,27 +1,9 @@
 <p id="notice"><%= notice %></p>
-
 <% if user_signed_in? %>
     <h1> Hi, <%= current_user.email %> </h1>
 <% end %>
 
-<ul>
-  <li><%= link_to "Sign up", new_user_registration_path %></li>
-  <li><%= link_to "Log in", new_user_session_path %></li>
-  <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-</ul>
-
 <h1>Animes</h1>
-
+<%= render 'form_user_help', anime: @anime %>
 <%= render 'form_main_page', anime: @anime %>
-
-<% if user_signed_in? %>
-  <%= link_to "Followed Animes"%>
-  <%= link_to "Favorite Animes", anime_favorites_path(:anime_id) %>
-  <% favorite = favorite_help1(@anime)%>
-        <td><%= link_to 'Destroy', anime_favorite_path(favorite.anime, favorite.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  <% if policy(@animes).admin?%>
-    <li><%= link_to 'New Anime', new_anime_path %></li>
-    <li><%= link_to "Users", users_index_path%></li>
-  <% end %>
-<% end %>
-  
+<%= render 'form_buttons_low', anime: @anime %>

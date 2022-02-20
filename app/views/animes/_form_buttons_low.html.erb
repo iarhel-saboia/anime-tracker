@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+  <%= link_to "Followed Animes", anime_follows_path(:anime_id) %>
+  <%= link_to "Favorite Animes", anime_favorites_path(:anime_id) %>
+  <% if policy(@animes).admin?%>
+    <li><%= link_to 'New Anime', new_anime_path %></li>
+    <li><%= link_to "Users", users_index_path%></li>
+  <% end %>
+<% end %>

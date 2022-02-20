@@ -1,0 +1,6 @@
+<% x = follow_help1(anime)%>
+  <% if x.nil?%>
+      <td><%= link_to 'Follow', anime_follows_path(anime), method: :post %></td>
+  <% else %>
+      <td><%= link_to 'Unfollow', anime_follow_path(x.anime, x.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
