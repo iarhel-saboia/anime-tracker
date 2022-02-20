@@ -1,10 +1,8 @@
-# README
-
-# Anime Tracker 
+# README 
 <h1 align="center">Anime Tracker</h1>
 
 ## Project Report
-<p align="center">This project was made to keep track of what animes you want to follow and what are your favorite animes</p>
+<p align="left">This project was made to keep track of what animes you want to follow and what are your favorite animes</p>
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
