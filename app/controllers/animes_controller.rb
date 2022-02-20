@@ -18,7 +18,10 @@ class AnimesController < ApplicationController
   # GET /animes/1/edit
   def edit
   end
-  
+
+  def follow_anime
+    @anime = @user.anime.follow(anime_params_)
+  end
 
   # POST /animes or /animes.json
   def create
@@ -67,6 +70,10 @@ class AnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def anime_params
-      params.require(:anime).permit(:title, :favorite, :release, :follow)
+      params.require(:anime).permit(:user, :title, :favorite, :release, :follow)
+    end
+    #Only allow the user to change the follow and favorite parameters.
+    def anime_params_
+      params.require(:anime).permit(:favorite, :follow)
     end
 end

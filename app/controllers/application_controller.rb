@@ -1,14 +1,14 @@
 class ApplicationController < ActionController::Base
 include Pundit
-    before_action :authenticate_user!, except: [:index]
-    before_action :set_current_user
+before_action :authenticate_user!, except: [:index]
+protect_from_forgery with: :exception
 
-    def set_current_user
-        if session[:user_id]
-            Current.user = User.find_by(id: session[:user_id])
-        end
+rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+private
+    def user_not_authorized
+        flash[:notice] = "you do not have permission to perfome this action"
+        redirect_to(request.referrer||root_path)
     end
-    protect_from_forgery with: :exception 
 end
 
-end
+   

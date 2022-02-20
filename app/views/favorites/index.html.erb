@@ -1,0 +1,28 @@
+      
+<h1>Your Favorite Animes</h1>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Release Date</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @favorites.each do |favorite| %>
+      <tr>
+        <td><%= favorite.anime.title %></td>
+        <td><%= favorite.anime.release %></td>
+        
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+  <td><%= link_to 'Back', animes_path %></td>
+<br>

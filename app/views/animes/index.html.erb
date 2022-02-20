@@ -1,46 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-
 <% if user_signed_in? %>
     <h1> Hi, <%= current_user.email %> </h1>
 <% end %>
 
 <ul>
   <li><%= link_to "Sign up", new_user_registration_path %></li>
-  <li><%= link_to "Log in", new_user_registration_path %></li>
+  <li><%= link_to "Log in", new_user_session_path %></li>
   <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
 </ul>
 
 <h1>Animes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Favorite</th>
-      <th>Release Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= render 'form_main_page', anime: @anime %>
 
-  <tbody>
-    <% @animes.each do |anime| %>
-      <tr>
-        <td><%= anime.title %></td>
-        <td><%= anime.favorite %></td>
-        <td><%= anime.release %></td>
-        <td><%= link_to 'Show', anime %></td>
-        <td><%= link_to 'Edit', edit_anime_path(anime) %></td>
-        <td><%= link_to 'Destroy', anime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Anime', new_anime_path %>
-
-<li><%= link_to "Users", users_index_url%></li>
-
-
+<% if user_signed_in? %>
+  <%= link_to "Followed Animes"%>
+  <%= link_to "Favorite Animes", anime_favorites_path(:anime_id) %>
+  <% favorite = favorite_help1(@anime)%>
+        <td><%= link_to 'Destroy', anime_favorite_path(favorite.anime, favorite.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% if policy(@animes).admin?%>
+    <li><%= link_to 'New Anime', new_anime_path %></li>
+    <li><%= link_to "Users", users_index_path%></li>
+  <% end %>
+<% end %>
+  

@@ -1,6 +1,10 @@
 <h1>Editing Anime</h1>
 
-<%= render 'form', anime: @anime %>
+<% if policy(@anime).admin?%>
+  <%= render 'form_edit_anime_admin', anime: @anime %>
+<% else %>
+  <%= render 'form_edit_anime', anime: @anime %>
+<% end %>
 
 <%= link_to 'Show', @anime %> |
 <%= link_to 'Back', animes_path %>

@@ -20,5 +20,7 @@
   <%= @anime.release %>
 </p>
 
-<%= link_to 'Edit', edit_anime_path(@anime) %> |
+<% if policy(@anime).admin? %>
+  <%= link_to 'Edit', edit_anime_path(@anime) %>
+<% end %>
 <%= link_to 'Back', animes_path %>
