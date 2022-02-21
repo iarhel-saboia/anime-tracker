@@ -40,6 +40,5 @@ Technologies implemented on this project:
 
 ### Author
   Made by Iarhel Andrade Sabóia
-  [![Linkedin Badge](https://img.shields.io/badge/-Iarhel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/iarhel-andrade-saboia/)](https://www.linkedin.com/in/iarhel-andrade-sabóia) 
-###
+  [![Linkedin Badge](https://img.shields.io/badge/-Iarhel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/iarhel-andrade-saboia/)](https://www.linkedin.com/in/iarhel-andrade-sabóia)
 
