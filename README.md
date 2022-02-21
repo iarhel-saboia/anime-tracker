@@ -30,6 +30,32 @@ $ rails s
 # The server will start on the default route:3000 - acesse <http://localhost:3000>
 ```
 
+```bash
+##For Admin
+# Clone this repository:
+$ git clone <https://https://github.com/iarhel-saboia/anime-tracker>
+
+# Access the directory you just cloned the project to:
+$ cd anime-tracker
+
+# Install dependencies
+$ bundle:install
+
+# Execute the application
+$ rails s
+
+# The server will start on the default route:3000 - acesse <http://localhost:3000>
+Register email and password
+
+#Create the admin role:
+$rails console
+$user = User.first
+$user.role = 0
+$user.save
+
+#Now you will have all admin privileges
+```
+
 ### Technologies
 
 Technologies implemented on this project:
@@ -37,6 +63,8 @@ Technologies implemented on this project:
 - [Rails](https://rubyonrails.org)
 - [Ruby](https://www.ruby-lang.org)
 - [SQLite3](https://www.sqlite.org/index.html)
+- [Pundit](https://www.rubydoc.info/gems/pundit/1.0.1)
+- [Devise](https://rubygems.org/gems/devise/versions/4.2.0?locale=pt-BR)
 
 ### Author
   Made by Iarhel Andrade Sabóia
