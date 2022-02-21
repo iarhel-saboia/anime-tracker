@@ -28,7 +28,7 @@ $ bundle:install
 $ rails s
 
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
-
+```
 
 ### Technologies
 
@@ -41,8 +41,6 @@ Technologies implemented on this project:
 ### Author
   Made by Iarhel Andrade Sabóia
   [![Linkedin Badge](https://img.shields.io/badge/-Iarhel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/iarhel-andrade-saboia/)](https://www.linkedin.com/in/iarhel-andrade-sabóia)
-
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/)
 
 Copyright (c) <2020> <Seu Nome>
 
