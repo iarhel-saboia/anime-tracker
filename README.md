@@ -27,7 +27,7 @@ $ bundle:install
 # Execute the application
 $ rails s
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+# The server will start on the default route:3000 - acesse <http://localhost:3000>
 ```
 
 ### Technologies
