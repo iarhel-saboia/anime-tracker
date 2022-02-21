@@ -12,13 +12,13 @@
         <td><%= anime.title %></td>
         <td><%= anime.release %></td>
         <td><%= link_to 'Show', anime %></td>         
+        <% if user_signed_in? %>
           <%= render 'form_help_follow', anime: anime %>
           <%= render 'form_help_favorite', anime: anime %>
-        <% if user_signed_in? %>
-          <% if policy(@animes).admin?%>
-            <td><%= link_to 'Edit', edit_anime_path(anime) %></td>
-            <td><%= link_to 'Destroy', anime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% end %>
+            <% if policy(@animes).admin?%>
+              <td><%= link_to 'Edit', edit_anime_path(anime) %></td>
+              <td><%= link_to 'Destroy', anime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
         <% end %>
       </tr>    
     <% end %>

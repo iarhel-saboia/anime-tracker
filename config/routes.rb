@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'users/index'
   root "animes#index"
   devise_for :users 
+  resources :users
   resources :animes do
     resources :favorites
     resources :follows

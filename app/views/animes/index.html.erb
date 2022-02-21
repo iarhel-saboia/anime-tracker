@@ -6,4 +6,7 @@
 <h1>Animes</h1>
 <%= render 'form_user_help', anime: @anime %>
 <%= render 'form_main_page', anime: @anime %>
+<p>
+    <%= paginate @animes%>
+</p>
 <%= render 'form_buttons_low', anime: @anime %>
