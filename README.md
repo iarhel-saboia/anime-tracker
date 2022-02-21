@@ -42,7 +42,7 @@ Technologies implemented on this project:
   Made by Iarhel Andrade Sabóia
   [![Linkedin Badge](https://img.shields.io/badge/-Iarhel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/iarhel-andrade-saboia/)](https://www.linkedin.com/in/iarhel-andrade-sabóia)
 
-Copyright (c) <2020> <Seu Nome>
+Copyright (c) <2020> <Iarhel Andrade Sabóia>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
