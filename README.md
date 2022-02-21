@@ -5,7 +5,7 @@
 <p align="left">This project was made to keep track of what animes you want to follow and what are your favorite animes</p>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=IN%20DEVELOPMENT&color=YELLOW&style=for-the-badge"/>
 </p>
 
 <h4 align="center"> 
